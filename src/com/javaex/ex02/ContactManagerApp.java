@@ -3,7 +3,6 @@ package com.javaex.ex02;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class ContactManagerApp {
 
@@ -12,8 +11,6 @@ public class ContactManagerApp {
 		int menu;
 		boolean endFlag = true;	//while문을 빠져나오기위한 변수
 		List<Phone> pList = new ArrayList<Phone>(); 
-		
-		Scanner sc = new Scanner(System.in);
 		
 		ManagementDB manager = new ManagementDB();	//DB관리 클래스를 만들어 사용
 		PhoneCtrl controll = new PhoneCtrl();
@@ -63,7 +60,6 @@ public class ContactManagerApp {
 			}
 		}
 		
-		sc.close();
 	}
 
 }
